@@ -1,9 +1,9 @@
 package main
 
 import (
-	"fmt"
-	"flag"
 	"encoding/json"
+	"flag"
+	"fmt"
 )
 
 func main() {

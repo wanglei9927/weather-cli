@@ -1,10 +1,11 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
 	"os"
+
 	"github.com/urfave/cli"
-	"encoding/json"
 )
 
 func main() {

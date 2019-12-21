@@ -2,11 +2,11 @@ package main
 
 import (
 	"fmt"
-	"net/http"
 	"io/ioutil"
+	"net/http"
 )
 
-const apiUrl = "http://www.sojson.com/open/api/weather/json.shtml?city="
+const apiUrl = "http://t.weather.sojson.com/api/weather/city/101030100?city="
 
 func Print(day string, r Response) {
 	fmt.Println("城市:", r.CityName)
@@ -45,4 +45,3 @@ func Request(url string) (string, error) {
 	body, _ := ioutil.ReadAll(response.Body)
 	return string(body), nil
 }
-
